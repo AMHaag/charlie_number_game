@@ -114,3 +114,164 @@ body {
 }
 
 
+#settingsIcon {
+  position:absolute;
+  top:1rem;
+  left:1rem
+
+}
+
+#settingsModal{
+  position: absolute;
+  width:80%;
+  min-height: 80%;
+  top: 1rem;
+}
+\
+
+.coinCount{
+  scale: .1;
+}
+
+
+
+
+/*** Utilities ***/
+.hidden {
+  visibility: hidden;
+}
+.unplaced {
+  display: none;
+}
+
+.flatFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.centeredFlex {
+  place-content: center;
+  place-items: center;
+  align-items: center;
+}
+
+.flatFlex > label {
+  padding: 0 0.5rem;
+}
+
+.stackFlex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+  /* align-content: space-between; */
+}
+.spaceAround{
+  justify-content: space-around;
+}
+span > .red {
+  color: red;
+  font-size: large;
+}
+.boldText {
+  font-weight: bold;
+}
+.boldLabel {
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+.slantLabel {
+  margin: 0 0.5rem 0 0.25rem;
+  font-style: italic;
+  text-align: center;
+}
+.disclaimer {
+  font-size: 0.825rem;
+  margin: 0 0.5rem 0 0.25rem;
+  /* font-style: italic; */
+  text-align: center;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.slantOption {
+  font-style: italic;
+}
+
+.centered {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  margin: 0.5rem 0 2rem 0;
+}
+.twoAcross {
+  grid-template-columns: 1fr 3fr;
+}
+.twoAcrossEven{
+  grid-template-columns: 1fr 1fr;
+}
+.threeAcross{
+  grid-template-columns: 2fr 2fr 2fr
+}
+.fourAcross {
+  grid-template-columns: repeat(4, 1fr);
+}
+.sixAcross {
+  grid-template-columns: repeat(6, 1fr);
+}
+.twoSpan{
+grid-column-end: span 2;
+}
+.threeSpan{
+  grid-column-end:span 3;
+}
+.fourSpan{
+  grid-column-end:span 4;
+}
+.fiveSpan{
+  grid-column-end:span 5;
+}
+.sixSpan{
+  grid-column-end:span 6;
+}
+
+.threeCol {
+  grid-column: 2 / 5;
+}
+.uniformLabel {
+  width: 11rem;
+}
+.p0 {
+  padding: 0rem;
+}
+.p1 {
+  padding: 1rem;
+}
+.p-half {
+  padding: 0.5rem;
+}
+.p-x-half {
+  padding: 0 0.5rem;
+}
+.m0 {
+  margin: 0;
+}
+.m1 {
+  margin: 1rem;
+}
+.m-half {
+  margin: 0.5rem;
+}
+.fullWidth{
+  width:100%;
+
+}
+.fullHeight{
+  height:100%;
+}

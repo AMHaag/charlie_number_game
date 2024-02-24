@@ -1,5 +1,5 @@
-let digitPlaces = 1;
-let sumMax = 9;
+let digitPlaces = 2;
+let sumMax = 15;
 let topNumber = 0;
 let bottomNumber = 0;
 let answer = topNumber + bottomNumber;
@@ -50,7 +50,7 @@ function resetAnswer() {
 }
 
 function generateRandomNumber() {
-  let limit = 0;
+  let limit = 1;
   switch (digitPlaces) {
     case 1:
       limit = 10;
@@ -65,6 +65,7 @@ function generateRandomNumber() {
       limit = 9;
   }
   let output = Math.floor(Math.random() * limit);
+  if(output === 0){output=generateRandomNumber()} 
   return output;
 }
 
@@ -143,3 +144,12 @@ document.getElementById('keyboard').addEventListener('click', function (event) {
   console.log(key.id);
 });
 newProblem();
+
+
+function toggleSettingsModal(){
+  let modal = document.getElementById('settingsModal');
+  // modal.show()
+}
+
+let settingsIcon = document.getElementById('settingsIcon');
+// settingsIcon.addEventListener('click', toggleSettingsModal);
